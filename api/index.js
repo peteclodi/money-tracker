@@ -1,5 +1,6 @@
 var http = require('http'),
     express = require('express'),
+    cors = require('cors'),
     path = require('path'),
     MongoClient = require('mongodb').MongoClient,
     Server = require('mongodb').Server,
@@ -11,6 +12,9 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 app.use(express.bodyParser());
 
+app.use(cors());
+app.use(app.router);
+
 var mongoHost = 'localHost'; //A
 var mongoPort = 27017;
 var collectionDriver;
@@ -21,7 +25,7 @@ mongoClient.open(function (err, mongoClient) { //C
         console.error("Error! Exiting... Must start MongoDB first");
         process.exit(1); //D
     }
-    var db = mongoClient.db("backbone_test");  //E
+    var db = mongoClient.db("money_tracker");  //E
     collectionDriver = new CollectionDriver(db); //F
 });
 
