@@ -20,4 +20,11 @@ angular
             .otherwise({
                 redirectTo: '/'
             });
+    })
+    .run(function($rootScope, $route, $location) {
+        $rootScope.activeTab = 'all';
+
+        $rootScope.$on('$routeChangeSuccess', function() {
+            $rootScope.activeTab = $location.url();
+        });
     });
