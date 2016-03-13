@@ -1,7 +1,6 @@
-.idea
-node_modules
-dist
-.tmp
-.sass-cache
-app/bower_components
-api/data
+.idea/
+assets/
+bower_components/
+coverage/
+docs/
+node_modules/
