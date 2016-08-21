@@ -1,5 +1,7 @@
 # MoneyTracker
 
+[ ![Codeship Status for peteclodi/money-tracker-frontend](https://codeship.com/projects/8bf28110-4980-0134-9539-56bd1d4e9b8b/status?branch=develop)](https://codeship.com/projects/169535)
+
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.11-webpack.2.
 
 ## Development server
