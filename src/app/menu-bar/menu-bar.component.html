@@ -1,0 +1,21 @@
+<md-toolbar color="primary">
+    <span>Money Tracker</span>
+    <span class="fill-remaining"></span>
+    <button md-icon-button [mdMenuTriggerFor]="menu">
+        <md-icon>more_vert</md-icon>
+    </button>
+    <md-menu #menu="mdMenu">
+        <button md-menu-item (click)="goHome()">
+            <md-icon>home</md-icon>
+            <span>Home</span>
+        </button>
+        <button md-menu-item (click)="pickAccount()">
+            <md-icon>account_balance</md-icon>
+            <span>Accounts</span>
+        </button>
+        <button md-menu-item (click)="accountSettings()">
+            <md-icon>account_circle</md-icon>
+            <span>Settings</span>
+        </button>
+    </md-menu>
+</md-toolbar>

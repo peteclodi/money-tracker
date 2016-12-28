@@ -1,0 +1,12 @@
+<span md-dialog-title>Select an Account</span>
+
+<md-radio-group class="account-radio-group" [(ngModel)]="selectedAccount" md-dialog-content>
+    <md-radio-button class="account-radio-button" *ngFor="let account of accounts" [value]="account">
+        {{account.name}}
+    </md-radio-button>
+</md-radio-group>
+
+<div class="button-row" md-dialog-actions>
+    <button md-button md-dialog-close>Cancel</button>
+    <button md-raised-button (click)="selectAccount()">Select Account</button>
+</div>

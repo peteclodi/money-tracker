@@ -1,0 +1,19 @@
+{
+    "selected-account": {
+        "id": "1"
+    },
+    "accounts": [
+        {
+            "id": "1",
+            "name": "Amex Blue"
+        },
+        {
+            "id": "2",
+            "name": "Amex Gold"
+        },
+        {
+            "id": "3",
+            "name": "Chase Slate"
+        }
+    ]
+}
