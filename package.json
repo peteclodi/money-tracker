@@ -12,6 +12,9 @@
     "e2e": "protractor",
     "api": "json-server --watch accounts.json --port 3000"
   },
+  "engines": {
+      "node": "^4.7"
+  },
   "private": true,
   "dependencies": {
     "@angular/common": "^2.3.1",
